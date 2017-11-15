@@ -35,8 +35,8 @@ app.config['MAIL_PORT'] = 587 #default
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME') # TODO export to your environs -- may want a new account just for this. It's expecting gmail, not umich
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-app.config['MAIL_SUBJECT_PREFIX'] = '[Songs App]'
-app.config['MAIL_SENDER'] = 'Admin <>' # TODO fill in email
+app.config['MAIL_SUBJECT_PREFIX'] = '[Songs App]' ## assumes you want any emails from this app to have the same start (comes from flickr or fitbit), sometimes they dont have this. might want a prefix
+app.config['MAIL_SENDER'] = 'Admin <solivia965>' # TODO fill in email
 app.config['ADMIN'] = os.environ.get('ADMIN')
 
 # Set up Flask debug stuff
